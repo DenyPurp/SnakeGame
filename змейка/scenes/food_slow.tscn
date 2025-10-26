@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmjt6tnwg2xrk"]
+
+[ext_resource type="Texture2D" uid="uid://dhg3h6bi7apdh" path="res://sprites/food_slow.tres" id="1_bkafw"]
+[ext_resource type="Script" uid="uid://bt3n52nibbau4" path="res://scripts/food_slow.gd" id="1_yxadu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxadu"]
+size = Vector2(26.378366, 22.933537)
+
+[node name="Food_slow" type="Node2D" groups=["food"]]
+script = ExtResource("1_yxadu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-5.9604645e-08, 2.9802322e-07)
+scale = Vector2(0.6065576, 0.6976682)
+shape = SubResource("RectangleShape2D_yxadu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.6899993, 2.0599997)
+texture = ExtResource("1_bkafw")
