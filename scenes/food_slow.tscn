@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmjt6tnwg2xrk"]
+
+[ext_resource type="PackedScene" uid="uid://b6qyi5l0iqcmr" path="res://scenes/food.tscn" id="1_bkafw"]
+[ext_resource type="Script" uid="uid://bt3n52nibbau4" path="res://scripts/food_slow.gd" id="2_th5n0"]
+[ext_resource type="Texture2D" uid="uid://dhg3h6bi7apdh" path="res://sprites/food_slow.tres" id="2_yxadu"]
+
+[node name="FoodSlow" groups=["food_slow"] instance=ExtResource("1_bkafw")]
+script = ExtResource("2_th5n0")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(2.6421797, 2.0137913)
+texture = ExtResource("2_yxadu")
